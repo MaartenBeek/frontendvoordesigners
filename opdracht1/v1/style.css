@@ -184,6 +184,33 @@ table td {
     color: darkgray;
 }
 
+@media only screen and (min-width: 800px) {
+    section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .thumb {
+        height: 200px;
+        max-width: 40%;
+    }
+    
+    article div {
+        width: 60%;
+    }
+    
+    article.show-more {
+        max-height: 232px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    section {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
 
 
 
