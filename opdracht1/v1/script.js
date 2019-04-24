@@ -2,11 +2,10 @@
 /*eslint-env browser*/
 /*eslint 'no-console':0*/
 
-var meerinfo = 
-document.querySelector('#meer');
-var article = document.querySelector('body > section > article > table');
+var meerinfo = document.querySelector('#meer');
+var article = document.querySelector('.kamer');
 
-function myFunction() {
+function changeButton() {
       var x = document.getElementById("meer");
       if (x.innerHTML === "Toon minder") {
         x.innerHTML = "Toon meer";
@@ -16,6 +15,6 @@ function myFunction() {
     }
 
 meerinfo.addEventListener('click',function(){
-    article.classList.toggle('show-text');
-    myFunction();
+    article.classList.toggle('show-more');
+    changeButton();
 });

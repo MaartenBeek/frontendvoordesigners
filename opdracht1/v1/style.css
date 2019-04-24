@@ -10,12 +10,8 @@ body {
     background-color: #222831;
 }
 
-body > article.show i {
-    animation: wiggle .5s .75s 1;
-    transform-origin: center bottom;
-}
-
 /* TYPOGRAPHY*/
+
 h1 {
     display: inline;
     font-size: 20px;
@@ -92,25 +88,33 @@ header nav ul li:hover a {
 
 /* ARTICLES */
 
-.thumb {
-    background-color: red;
-    max-width: 26%;
-    height: 100px;
-    background-position: center;
-    background-size: cover;
-}
-
 article {
-    transition: margin-top 500ms;
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
+    max-height: 500px;
+    overflow: hidden;
+    transition: ease-out 1s;
+
+}
+
+article.show-more {
+    max-height: 132px;
+    transition: ease-out 1s;
 }
 
 article div {
     width: 74%;
     padding-left: 1em;
     position: relative;
+}
+
+.thumb {
+    background-color: red;
+    max-width: 26%;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
 }
 
 .image1 {
@@ -138,6 +142,8 @@ span {
     color: 00adb5;
 }
 
+/* BUTTON */
+
 button {
     padding: 0;
     background-color: rgba(0, 0, 0, 0);
@@ -161,37 +167,21 @@ button:hover {
     cursor:pointer;
 }
 
+/* TABLE */
+
 table {
     font-size: 14px;
     margin-top: 20px;
     display: block;
     width: 100%;
-
-}
-
-table.show-text {
-    display: none;
 }
 
 table th {
     text-align: left;
-    
 }
 
 table td {
     color: darkgray;
-}
-
-legend i {
-    
-}
-
-@keyframes wiggle {
-    0% {transform: rotate(0deg);}
-    25% {transform: rotate(-10deg);}
-    50% {transform: rotate(20deg);}
-    75% {transform: rotate(-10deg);}
-    100% {transform: rotate(0deg);}
 }
 
 
