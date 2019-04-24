@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    margin: auto;
+    font-family: sans-serif;
+    color: white;
+    background-color: #222831;
+}
+
+body > article.show i {
+    animation: wiggle .5s .75s 1;
+    transform-origin: center bottom;
+}
+
+/* TYPOGRAPHY*/
+h1 {
+    display: inline;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    display: inline;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 10px;
+    color: darkgray;
+}
+
+/* COLORS */
+
+.background-darkgrey {
+    background-color: #222831;
+}
+
+.background-lightgrey {
+    background-color: #292f37;
+}
+
+/* NAV */
+
+header {
+    background-color: #00adb5;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav ul {
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+    font-size: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-bottom: 2px #222831;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    transition: ease 0.3s;
+
+}
+
+header nav ul li:hover {
+    background-color: ;
+    border-bottom: 2px #222831 solid;
+}
+
+header nav ul li:hover a {
+    color: #222831;
+    transition: ease 0.3s;
+}
+
+/* ARTICLES */
+
+.thumb {
+    background-color: red;
+    max-width: 26%;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+article {
+    transition: margin-top 500ms;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article div {
+    width: 74%;
+    padding-left: 1em;
+    position: relative;
+}
+
+.image1 {
+    background-image: url(img/kamer_1.jpg);
+}
+
+.image2 {
+    background-image: url(img/kamer_2.jpg);
+}
+
+.image3{
+    background-image: url(img/kamer_3.jpg);
+}
+
+.image4{
+    background-image: url(img/kamer_4.jpg);
+}
+
+.image5 {
+    background-image: url(img/kamer_5.jpg);
+}
+
+span {
+    float: right;
+    color: 00adb5;
+}
+
+button {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    color: #00adb5;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s ease;
+    color: white;
+    cursor:pointer;
+}
+
+table {
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+
+}
+
+table.show-text {
+    display: none;
+}
+
+table th {
+    text-align: left;
+    
+}
+
+table td {
+    color: darkgray;
+}
+
+legend i {
+    
+}
+
+@keyframes wiggle {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-10deg);}
+    50% {transform: rotate(20deg);}
+    75% {transform: rotate(-10deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+
+
+
+
+
+
