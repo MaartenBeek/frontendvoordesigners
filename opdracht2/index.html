@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+  <html lang="nl">
+   
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Verhalen</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+  
+        <body>
+        
+            <!--     SLIDESHOW CONTAINER     -->
+            <div class="slideshow-container">
+               
+                <div class="slide">
+                    <img src="img/firewatch_1.jpg" alt="">
+                    <h2 class="text">Firewatch 1</h2>
+                </div>
+                               
+                <div class="slide">
+                    <img src="img/firewatch_2.jpg" alt="">
+                    <h2 class="text">Firewatch 2</h2>
+                </div>
+                               
+                <div class="slide">
+                    <img src="img/firewatch_3.jpg" alt="">
+                    <h2 class="text">Firewatch 3</h2>
+                </div>     
+                      
+                <a class="prev" onclick="plusSlides(-1)"></a>
+                <a class="next" onclick="plusSlides(1)"></a>
+                                                                                 
+            </div>
+            
+            <!--      DOTS      -->
+            <div>
+                <span id="dot1" class="dot" onclick="currenSlide(1)"></span>
+                <span id="dot2" class="dot" onclick="currenSlide(2)"></span>
+                <span id="dot3" class="dot" onclick="currenSlide(3)"></span>
+            </div>
+            
+            <script src="script.js"></script>
+            
+        </body>
+        
+    </html>
