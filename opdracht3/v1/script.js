@@ -68,6 +68,7 @@ function myFunction() {
       txtValue = h2.textContent || h2.innerText;
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
         article[i].style.display = "";
+        noResult.style.display = "none";
       } else {
         article[i].style.display = "none";
         noResult.style.display = "block";
@@ -75,10 +76,6 @@ function myFunction() {
     } 
   }
 }
-
-
-
-
 
 
 

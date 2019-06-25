@@ -3,7 +3,7 @@
   }
 
 body{
-    background: #eee;
+    background: black;
     font-family: sans-serif;
     margin: 0;
 }
@@ -31,6 +31,7 @@ input {
     width: 100%;
     padding: 10px;
     font-size: 24px;
+    margin-bottom: 20px
 }
 
 input:focus {
@@ -53,8 +54,7 @@ main section {
 }
 
 main section article {
-    margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-top: 0;
     max-width: 30%;
     height: auto;
@@ -82,5 +82,25 @@ main section article span {
 img {
     width: 100%;
 }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1200px) {
+    main section article {
+        max-width: 48%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main section article {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
 
 
