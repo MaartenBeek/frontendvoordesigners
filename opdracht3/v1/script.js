@@ -52,7 +52,7 @@ function populateArticle(jsonObj) {
     
 }
 
-function myFunction() {
+function searchFunction() {
   // Declare variables 
   var input, filter, section, article, h2, i, txtValue, noResult;
   input = document.getElementById("myInput");
